@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Doe sangue!</title>
+
+    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+
+</head>
+
+<body>
+    <header>
+        <img class=logo src="logo.png" alt="DOE">
+        <h2>Sua doação é importante</h2>
+
+        <p>É possível salvar até 3 vidas com 1 doação</p>
+        <p>Apenas 1,9% da população brasileira doa sangue</p>
+
+        <button>Quero Ajudar!</button>
+    </header>
+
+    <section class="form hide">
+        <h2>Seja um doador!</h2>
+
+        <form action="/" method="POST">
+
+            <input type="text" name="name" placeholder="Nome Completo">
+
+            <input type="text" name="email" placeholder="Email">
+
+            <input type="text" name="blood" placeholder="Tipo Sanguíneo">
+
+            <button>Quero Ajudar!</button>
+
+        </form>
+    </section>
+
+    <main>
+        <h2>Últimos <span>doadores</span></h2>
+        <section class="donors">
+            {% for donor in donors | reverse %}
+                {% if loop.index <= 4 %}
+                    <div class="donor">
+                        <div class="blood">{{donor.blood}}</div>
+                        <p>{{donor.name}}</p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+ 
+        </section>
+
+    </main>
+
+
+    <footer>
+        <hr id="footerline">
+        Feito pelo Jão
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+
+</html>

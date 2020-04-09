@@ -1,2 +1,6 @@
 # MaratonaDev-3.0
-Mock-up page to donate blood and get donators info using a DB
+Projet created on MaratonaDev 3.0 event by RocketSeat
+
+Projeto criado na MaratonaDev 3.0, um evento realizado pela RocketSeat
+
+Mock-up de uma página sobre conscientização da doação de sangue e coleta de novos doadores usando um Banco de Dados.
